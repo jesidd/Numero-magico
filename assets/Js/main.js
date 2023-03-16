@@ -15,11 +15,11 @@ function numeroMagico(){
         }else{
             if(numero < numeroRandom){
                 $(document).ready(function(){
-                    $("#pista").text("el numero ingresado es menor");
+                    $("#pista").text("el numero ingresado es menor al numero magico");
                 });
             }else{
                 $(document).ready(function(){
-                    $("#pista").text("el numero ingresado es mayor");
+                    $("#pista").text("el numero ingresado es mayor al numero magico");
                 });
             }
             $(document).ready(function(){
