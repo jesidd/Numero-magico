@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/box/box.css">
+    <link rel="stylesheet" href="assets/css/stile.css">
+    <link rel="stylesheet" href="assets/css/historial/historial.css">
+    <link rel="stylesheet" href="assets/css/historial/historial-tabla.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="assets/Js/main.js"></script>
     <title>Numero Magico</title>
 </head>
 
 <body>
-    <div class="box">
-        Ingrese el numero Magico entre (1 - 100)
+    <section class="box">
+        <h2 class="box__titulo">Ingrese un numero entre (1 - 100)</h2>
         <p id="intentos"></p>
         <div class="entradas">
             <input id="numero" type="Number">
@@ -22,7 +27,20 @@
         <aside>
             
         </aside>
-    </div>
+    </section>
+    <section class="historial">
+        <table class="historial__tabla">
+            <thead>
+                <tr>
+                    <th>Intento</th>
+                    <th>Numero Ingresado</th>
+                </tr>
+            </thead>
+            <tbody class="historial__tabla__cuerpo">
+
+            </tbody>
+        </table>
+    </section>
 </body>
 
 </html>

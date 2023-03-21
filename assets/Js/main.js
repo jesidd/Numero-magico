@@ -11,6 +11,9 @@ function numeroMagico(){
 
     if(intentos < 10){
         if(numero == numeroRandom){
+            intentos++;
+            msjIntentos(intentos);
+            historial(intentos,numero);
             alert("el numero es correto");
         }else{
             if(numero < numeroRandom){
@@ -22,11 +25,23 @@ function numeroMagico(){
                     $("#pista").text("el numero ingresado es mayor al numero magico");
                 });
             }
-            $(document).ready(function(){
-                $("#intentos").text("Tu numero de intentos es : "+intentos);
-            });
             intentos++;
+            msjIntentos(intentos);
+            historial(intentos,numero);
         }
     }
 
+}
+
+function historial(i,n){
+    $(document).ready(function(){
+        var text = "<tr><td>"+i+"</td><td>"+n+"</td></tr>"
+        $(".historial__tabla__cuerpo").before(text);
+    });
+}
+
+function msjIntentos(i){
+    $(document).ready(function(){
+        $("#intentos").text("Tu numero de intentos es : "+i);
+    });
 }
