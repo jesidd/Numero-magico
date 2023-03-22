@@ -1,6 +1,20 @@
 body{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(../img/Blue\ Fluid\ Abstract\ Texture\ Zoom\ Virtual\ Background.mp4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: none;
+}
+
+*{
+    overflow: hidden;
+}
+
+.video{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
 }
