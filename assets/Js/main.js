@@ -14,7 +14,12 @@ function numeroMagico(){
             intentos++;
             msjIntentos(intentos);
             historial(intentos,numero);
-            alert("el numero es correto");
+            Swal.fire({
+                icon: 'sucess',
+                title: 'Buen trabajo',
+                text: 'Has acertado!',
+                footer: '<a href="../index.html">click aqui para volver a jugar</a>'
+            })
         }else{
             if(numero < numeroRandom){
                 $(document).ready(function(){
@@ -29,6 +34,14 @@ function numeroMagico(){
             msjIntentos(intentos);
             historial(intentos,numero);
         }
+    }
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Game over',
+            text: 'Sigue intentandolo!',
+            footer: '<a href="../index.html">click aqui para volver a jugar</a>'
+        })
     }
 
 }
